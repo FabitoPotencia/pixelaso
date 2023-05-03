@@ -10,7 +10,7 @@
     <script>
         function rotar_imagen(){
           var tiempo = 3000;//tiempo en milisegundos
-          var arrImagenes = ['action carrusel.jpeg','byw carrusel.jpg','naturaleza carrusel.jpg','descarga.jpg'];
+          var arrImagenes = ['action carrusel.jpeg','byw carrusel.jpg','naturaleza carrusel.jpg', 'minimalista.png'];
 
          _img = document.getElementById('rotativo');
 
@@ -36,7 +36,11 @@
         </div>
         <nav class="navegacion">
             <ul class="menu">
-                <li><a href="#">Main</a></li>
+                <li>
+                    <a href="#">
+                        <img class="main" src="home.jpg" alt="Main">
+                    </a>
+                </li>
                 <li><a href="#">Minimalista</a></li>
                 <li><a href="#">B&W</a></li>
                 <li><a href="#">Acción</a>
@@ -49,12 +53,10 @@
             </ul>
         </nav>
     </header>
-    <br>
-    <br>
-    <center> <table align="center" width="500">
+    <center> <table align="center">
         <tr>
-            <td>
-               <img id="rotativo" width="500"/>
+            <td class="slider-inner">
+               <img id="rotativo"/>
             </td rowspan="2">
         </tr>
     </table></center>
