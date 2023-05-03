@@ -38,7 +38,7 @@ header{
  
 .navegacion{
     width: 100%auto;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 10px;
     background-color: #4aa3f7;
 }
@@ -51,6 +51,17 @@ header{
 .menu > li{
     position: relative;
     display: inline-block;
+}
+
+.menu > img{
+    padding: none;
+    margin-top: 10px;
+}
+
+.main {
+    max-width: 35px;
+    width: 100%;
+    margin-top: 10px;
 }
 
 .menu > li > a{
@@ -68,9 +79,10 @@ header{
     opacity: 1;
     background-color: #4aa3f7;
     width: 100%;
-    color: rgb(255, 224, 47);
+    /* color: rgb(255, 224, 47); */
     transition: .15s;
 }
+
 
 .submenu{
     position: absolute;
@@ -86,6 +98,8 @@ header{
 .submenu li a{
     display: block;
     padding: 15px;
+    opacity: 0.85;
+    width: 90%;
     letter-spacing: 0.7px;
     color: white;
     font: Cambria, Cochin, Georgia, Times, serif;
@@ -94,6 +108,7 @@ header{
 
 .menu li:hover .submenu{
     visibility: visible;
+    width: 100% ;
     opacity: 1;
 }
 
@@ -102,7 +117,24 @@ header{
         flex-direction: column;
     }
 
-    nav[
+    nav{
         padding: 10px 0px;
-    ]
+    }
+}
+
+.slider-inner{
+    
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    max-width: 850px;
+    padding: 40px 40px;
+    transition: all 0.3s ease-in;
+}
+
+#rotativo{
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    
 }
