@@ -5,12 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="descarga.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="faviconlogo.png" type="image/x-icon">
     <title>Pixelaso</title>
     <script>
         function rotar_imagen(){
-          var tiempo = 1000;//tiempo en milisegundos
-          var arrImagenes = ['img3.jpeg','img4.jpeg','img5.jpeg'];
+          var tiempo = 3000;//tiempo en milisegundos
+          var arrImagenes = ['action carrusel.jpeg','byw carrusel.jpg','naturaleza carrusel.jpg','descarga.jpg'];
 
          _img = document.getElementById('rotativo');
 
@@ -25,11 +25,11 @@
     </script>
 
 </head>
-<body  onLoad="rotar_imagen();">
+<body onLoad="rotar_imagen();">
     
     <header>
         <div class="logo">
-            <img src="Imágenes/favicon-logo-recortado-removebg-preview.png" alt="Pixelaso">
+            <img src="faviconlogo.png" alt="Pixelaso">
             <h1 class="titulo">
                 Pixelaso
             </h1>
@@ -49,7 +49,9 @@
             </ul>
         </nav>
     </header>
-    <center> <table align="center" width="500" border="1">
+    <br>
+    <br>
+    <center> <table align="center" width="500">
         <tr>
             <td>
                <img id="rotativo" width="500"/>
@@ -57,4 +59,14 @@
         </tr>
     </table></center>
 </body>
+<footer>
+    <hr width="100%" size="8" color="black">
+    <center>
+        <a href="mailto:fabianbarrios88@gmail.com"> <img src="gmail.png" width="40px"> </a>
+        <br>
+        <a href="https://www.uaa.edu.py/"> <img src="escudo_uaa.png" width="40px"> </a>
+        <br>
+        <img src="telefono.png" width="40px"> <p>+54-93718663693 </p>
+    </center>  
+   </footer>
 </html>
